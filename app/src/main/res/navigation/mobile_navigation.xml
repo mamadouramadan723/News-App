@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/headlinesFragment">
+
+    <fragment
+        android:id="@+id/headlinesFragment"
+        android:name="com.rmd.business.newsapp.presentation.ui.headlines.HeadlinesFragment"
+        android:label="HeadlinesFragment">
+        <action
+            android:id="@+id/action_headlinesFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/favouritesFragment"
+        android:name="com.rmd.business.newsapp.presentation.ui.favorite.FavoriteFragment"
+        android:label="FavouritesFragment">
+        <action
+            android:id="@+id/action_favouritesFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.rmd.business.newsapp.presentation.ui.search.SearchFragment"
+        android:label="SearchFragment">
+        <action
+            android:id="@+id/action_searchFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.rmd.business.newsapp.presentation.ui.article.ArticleFragment"
+        android:label="ArticleFragment">
+        <!--<argument
+            android:name="article"
+            app:argType="com.rmd.business.newsapp.domain.model.Article" />-->
+    </fragment>
+</navigation>
