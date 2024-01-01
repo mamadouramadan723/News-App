@@ -13,7 +13,7 @@ class ArticleRepository(private val db: ArticleDB) {
 
     suspend fun upsert(article: ArticleEntity) = db.getArticleDao().upsertArticle(article)
 
-    suspend fun getFavoriteNew() = db.getArticleDao().getAllArticle()
+    suspend fun getFavorites() = db.getArticleDao().getAllArticle()
 
     suspend fun deleteArticle(article: ArticleEntity) = db.getArticleDao().deleteArticle(article)
 }
