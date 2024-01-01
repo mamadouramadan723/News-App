@@ -1,4 +1,4 @@
-package com.rmd.business.newsapp.data.api
+package com.rmd.business.newsapp.data.datasource.remote.api
 
 import com.rmd.business.newsapp.BuildConfig.API_KEY
 import com.rmd.business.newsapp.domain.model.APIResponse

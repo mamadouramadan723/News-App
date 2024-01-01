@@ -1,8 +1,8 @@
 package com.rmd.business.newsapp.domain.repository
 
-import com.rmd.business.newsapp.data.api.RetrofitInstance
 import com.rmd.business.newsapp.data.datasource.local.db.ArticleDB
 import com.rmd.business.newsapp.data.datasource.local.entity.ArticleEntity
+import com.rmd.business.newsapp.data.datasource.remote.api.RetrofitInstance
 
 class ArticleRepository(private val db: ArticleDB) {
     suspend fun getHeadlines(countryCode: String, pageNumber: Int) =
